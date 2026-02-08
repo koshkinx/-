@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitGen — генератор тренировок</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>FitGen</h1>
+      <p class="subtitle">Нажми на кнопку и получи персональную тренировку на сегодня.</p>
+
+      <section class="controls">
+        <label for="goal">Цель:</label>
+        <select id="goal">
+          <option value="fat-loss">Снижение веса</option>
+          <option value="muscle">Набор мышц</option>
+          <option value="endurance">Выносливость</option>
+          <option value="mobility">Мобильность и восстановление</option>
+        </select>
+
+        <label for="level">Уровень:</label>
+        <select id="level">
+          <option value="beginner">Новичок</option>
+          <option value="intermediate">Средний</option>
+          <option value="advanced">Продвинутый</option>
+        </select>
+
+        <button id="generateBtn" type="button">Сгенерировать тренировку</button>
+      </section>
+
+      <section id="workoutCard" class="workout-card" aria-live="polite">
+        <h2>Твоя тренировка</h2>
+        <p class="muted">Выбери параметры и нажми кнопку.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
